@@ -104,7 +104,8 @@ Although I have nothing but kind things to say about Lua, actually integrating i
 
 One of the most important additions to the project was an in-engine console (if you run BT.exe off any build you can get there with the tilde) that simply allows you to execute arbitrary lua commands and print the output
 
-{% youtube hb6pgZX6jG8 %}
+[![](http://i.imgur.com/RBdwF7d.png)](https://www.youtube.com/watch?v=hb6pgZX6jG8)
+
 
 In conclusion I'll say that affecting your native-engine game while it's running using typed-in scripts feels like magic.  There's a _ton_ of effort behind making your game script-powered in a way that doesn't crash and burn (especially for an admittedly already over-architected engine like sEGA) but as I progress forward as careful as possible the rewards are stunning.
 
