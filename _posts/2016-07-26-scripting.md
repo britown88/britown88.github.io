@@ -2,7 +2,7 @@
 layout: post
 title: "So you want a scripting language"
 ---
-It's become a popular idea over the years that if you're making a content-heavy game then _you need a scripting language, son_. While everything has its time and place, it's easy to see some major advantages in having asset data drive game logic without needing to rebuild on every change.  Since I rarely learn from my mistakes and am moving forward with the most content-heavy game I've ever attempted, it became time to take a hard look at my options.
+It's become a popular idea over the years that if you're making a content-heavy game then _you need a scripting language, son_. While everything has its time and place, it's easy to see some major advantages in having asset data drive game logic without needing to rebuild on every change.  Since I rarely learn from my mistakes and am moving forward with the most content-heavy game I've ever attempted, it became time to take a hard look at my options.  Affecting your native-engine game while it's running using typed-in scripts feels like magic.  There's a _ton_ of effort behind making your game script-powered in a way that doesn't crash and burn (especially for an admittedly already over-architected engine like sEGA) but as I progress forward as careful as possible the rewards are stunning.
 
 ### Before anything, what problem are we solving
 
@@ -34,13 +34,11 @@ addAction (startBattle "recruit" false >
 
 Although it looks like code syntax it's still just data.  When this script is read in it creates a list of actions with the accompanying values and when the script is activated in-game it executes each action in order one at a time.
 
-This approach worked wonders for a majority of the interactions in the game.  A "Script" was just a list of things to do when you touched it and each action handled how it behaved or if it blocked the next action from starting etc. If you've ever used RPG-Maker (Specifically 2003) our system is largely modeled on that overall idea.
+This approach worked wonders for a majority of the interactions in the game.  A "Script" was just a list of things to do when you activated it in-game. Each action handled how it behaved or if it blocked the next action from starting. If you've ever used RPG-Maker (Specifically 2003) our system is largely modeled on that overall idea.  The important thing to keep in mind here is that these were always read in at map-load, never executed during runtime.  The text files in the asset folder described lists of actions, which would be read into an action list in memory and then the action list was executed during the game when you interacted with the object.  This caused issue where you might want to resolve information at time of execution in your script but all scripts had to be written in a generic global state frame of reference.
 
-Unfortunately we ran into some major hurdles as scripts became increasingly complex to fit the various cinematic needs we wanted.
+We ran into major hurdles as scripts became increasingly complex to fit the various cinematic needs we wanted.  Every new feature required a new action to be created which lead to a significant amount of code bloat as scripts ever-expanded into being able to do more and more.
 
 ![](http://i.imgur.com/DXJ7Y3E.gif "From here, killing all the villagers in Albi doesn't look so bad.")
-
-Additionally, every new feature required a new action to be created which lead to a significant amount of code bloat as scripts ever-expanded into being able to do more and more.
 
 #### Coroutines
 
@@ -106,7 +104,7 @@ One of the most important additions to the project was an in-engine console (if 
 
 [![](http://i.imgur.com/RBdwF7d.png)](https://www.youtube.com/watch?v=hb6pgZX6jG8)
 
-
-In conclusion I'll say that affecting your native-engine game while it's running using typed-in scripts feels like magic.  There's a _ton_ of effort behind making your game script-powered in a way that doesn't crash and burn (especially for an admittedly already over-architected engine like sEGA) but as I progress forward as careful as possible the rewards are stunning.
+More on achitecture and sEGA's implementation of Lua to come![^2]
 
 [^1]: OK I didn't spare you the philosophical details
+[^2]: Probably maybe
