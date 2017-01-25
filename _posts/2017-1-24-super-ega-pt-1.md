@@ -34,6 +34,7 @@ Meanwhile, Microcomputers were becoming available in increasingly affordable opt
 Now I don't mean to editorialize, there were many varied and complex causes behind the crash of '83.  Nonetheless, it's important to understand that games for DOS were quite insulated from the recession.  In the two years before Nintendo released the NES in North America and rebooted the console market in a massive way, DOS games enjoyed a comfortable era.  You didn't need to convince mom and dad to get a computer to play King's Quest, they already had one because it had Lotus 1-2-3 on it.
 
 ### Graphics Standards and the Video Games who loved them
+
 #### CGA
 The 5150 came equipped with IBM's first ever graphics card, the _IBM Color/Graphics Monitor Adapter_.  The card introduced a graphics standard which would be come to be known as simply the Color Graphics Adapter, or CGA.  This card boasted a stunning 16 kB of _dedicated_ video memory which allowed it to render either a resolution of 320x200 with 4 colors from a 16-color palette, or an astounding 640x200 resolution with 2 colors.
 
