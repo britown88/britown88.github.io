@@ -7,6 +7,7 @@ Ever since I started this space, I've been meaning to sit down and talk a bit ab
 As with every post I've written, I set out to write a short and snappy little treatise on the important bits but then got 200 paragraphs in and decided to break it up.  So the first bit of my documentation of the project will be a bit of a history lesson.  Please enjoy.
 
 ## CGA, EGA, VGA: A (Perhaps Not So) Brief History Part 1: CGA
+
 ### The rise of the IBM PC
 
 <img src="/images/posts/super-ega-pt-1/us__en_us__ibm100__the_pc__icon__540x324.png" style="width:400px;display:inline;float:right;padding:25px;">
@@ -84,7 +85,7 @@ A notable competitor to the CGA card was the much-better-named Hercules Graphics
 A slight problem with the MDA/CGA split is that some programs did not support both cards because they hadn't been coded to check and provide different display modes.  What this forced some users to do is buy _both_ cards and run a second monitor.
 
 HGC partially solved this issue by first and foremost being a MDA-compatible monochrome card.  However, with some post-release driver support, the HGC was also able to run programs that used the common CGA graphical modes.  Now Hercules had no color circuitry so the CGA renders were all in various shades of dithered monochrome gray but that didn't stop the card from becoming wildly popular.  The ability to do both high-resolution text _and_ graphics made it the de facto standard on PC Compatibles.  As such, many games and software included Hercules-specific display mode options.
- 
+
 ![](/images/posts/super-ega-pt-1/sierra_004.png)
 
 #### Legacy
