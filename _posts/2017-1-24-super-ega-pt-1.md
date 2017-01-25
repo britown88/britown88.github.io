@@ -19,11 +19,15 @@ The details of IBM's commission allowed Microsoft to go ahead and sell their own
 What followed was the age of the IBM PC-Compatible Computer.  Microcomputer manufacturers, in order to compete, created machines that both ran MS-DOS and mimicked the hardware needs of its most popular software.  By 1983, the market was beginning to fill to capacity with "PC Clones" from companies like Compaq, Tandy/Radio Shack, Hewlett-Packard, and Texas Instruments. When supply and the pricetag of the 5150 and its successors failed to meet demand, many users opted for the cheaper alternatives.
 ![](/images/posts/super-ega-pt-1/maccharlie_large.jpg)
 
-In a flurry of competitive one-ups-manship, the home computing market of the 80's became one in which, for the first time, software developers could begin to rely on a fairly encompassing install-base for the software they wrote. Most home computer owners could buy and play your PC DOS game.
+By 1983, IBM was a dominating force to be reckoned with.  It "devoured competitors like a cloud of locusts."  This was only further solidified by the release of DOS 2.0 running on the 5150's successor, the XT.  The XT came equipped with it's own internal hard drive and was more competitively priced.  By 1984, IBM reported $4 billion in PC revenue, more than most of its competitors that year combined.
+
+For software developers in the 1980's, the market was becoming, for the first time, a largely uniform one.  Most computers were either IBMs or could run IBM programs.  This meant one of the largest install-bases (potential buyers of a given piece of software) that had ever existed.  As PC sales increased, so did the money in its software, and so did the incentive to make more.
+
+Not to get ahead of ourselves, it's important to note that this all didn't happen overnight.  The rise of the PC was perhaps more of a crawl over the course of a decade; a crawl primarily made by businesses and _dads_.  Compared to Home Computers like the Commodore 64, the IBM PC was _expensive_ at launch.  It generally failed to make its way into a majority of households in '81 simply because it cost thousands of dollars.  It's acceptance didn't begin to truly take off until the release of the XT in 1983 and didn't earn it's universal acceptance and permanence until the introduction of VGA in '87 and '88.
+
+I like to think, however, that its initial boost was helped, if only a little, by the brutal and unsightly death of some other companies.
 
 #### The Fall of the Home Computer
-
-Compared to Home Computers like the Commodore 64, the IBM PC was _expensive_.  It generally failed to make its way into a majority of households in '81 simply because it cost thousands of dollars.  When I speak of the rise of the PC, it was for all intents and purposes a slow crawl over the course of a decade; a crawl primarily made by businesses and _dads_.  However, I like to think that the eventual installation of MS-DOS and, later, the Windows PC, as the supreme ruler home computing was helped maybe a little by the brutal and unsightly death of some other companies.
 
 <img src="/images/posts/super-ega-pt-1/et_pal_2.gif" style="width:300px;display:inline;float:left;padding:25px;">
 
@@ -46,9 +50,7 @@ As you can see from my highly flamboyent chart: by using every possible combinat
 
 "But Brandon", you might say, you estute reader you, "You said that the CGA card had 16 kilobytes of video memory and if you have 4 bits for each pixel then that would need 320 x 200 x 4 = 256,000 bits! That's 32 kilobytes, not 16!"
 
-Right you are. But if you paid close attention, you may have also noticed that I didn't say it rendered with 4-bit colors, I said it rendered _with 4 colors_.  Every pixel in video memory was only given _2 bits_ whose possible values can only be 00, 01, 10, or 11 or, in decimal, 0, 1, 2, or 3.  Since every pixel used 2 bits, not 4, you only need 320 x 200 x 2 bits, which is 16 kilobytes on the dime.
-
-All 16 kilobytes of video memory are in one contiguous block of memory.  This block is arranged by 2 bits per pixel, 320 pixels per scan-line (320 x 2 / 8 = 80 byte scan-lines) and 200 scan-lines in the buffer.  The scan-lines are also interleaved; the first 100 lines are the even numbered lines and the second 100 are odd.
+Right you are. But if you paid close attention, you may have also noticed that I didn't say it rendered with 4-bit colors, I said it rendered _with 4 colors_.  Every pixel in video memory was only given _2 bits_ whose possible values can only be 00, 01, 10, or 11 or, in decimal, 0, 1, 2, or 3.  Since every pixel used 2 bits, not 4, you only need 320 x 200 x 2 bits, which is 16 kilobytes on the dime[^2].
 
 How then, is CGA considered 4-bit color?  For that we need to talk about palettes because they'll come into play for EGA and VGA as well.
 
@@ -105,3 +107,5 @@ When CGA was replaced by its successor, EGA, the price of CGA cards dropped dram
 
 
 [^1]: Companies began to settle on the term Microcomputer to distinguish the new machines from the popular "Home Computers" of Atari and Commodore from the 70's, which had a recognition of being budget and not very powerful.  This became even more important after the North American home computer video games crash of 1983.
+
+[^2]: All 16 kilobytes of video memory are in one contiguous block of memory.  This block is arranged by 2 bits per pixel, 320 pixels per scan-line (320 x 2 / 8 = 80 byte scan-lines) and 200 scan-lines in the buffer.  The scan-lines are also interleaved; the first 100 lines are the even numbered lines and the second 100 are odd.
