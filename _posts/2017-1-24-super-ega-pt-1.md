@@ -48,6 +48,8 @@ As you can see from my highly flamboyent chart: by using every possible combinat
 
 Right you are. But if you paid close attention, you may have also noticed that I didn't say it rendered with 4-bit colors, I said it rendered _with 4 colors_.  Every pixel in video memory was only given _2 bits_ whose possible values can only be 00, 01, 10, or 11 or, in decimal, 0, 1, 2, or 3.  Since every pixel used 2 bits, not 4, you only need 320 x 200 x 2 bits, which is 16 kilobytes on the dime.
 
+All 16 kilobytes of video memory are in one contiguous block of memory.  This block is arranged by 2 bits per pixel, 320 pixels per scan-line (320 x 2 / 8 = 80 byte scan-lines) and 200 scan-lines in the buffer.
+
 How then, is CGA considered 4-bit color?  For that we need to talk about palettes because they'll come into play for EGA and VGA as well.
 
 #### Palettes
