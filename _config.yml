@@ -7,15 +7,15 @@
 
 # Site settings
 title: Project Graveyard
-email: p4r4digm@gmail.com
+email: britown@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A place for me to discuss failed creative pursuits, wax philosophical
   about potentially successful ones, and convince myself that 
   I am always working toward the latter.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://p4r4digm.github.io" # the base hostname & protocol for your site
-twitter_username: p4r4digm
-github_username:  p4r4digm
+url: "http://britown88.github.io" # the base hostname & protocol for your site
+twitter_username: britown88
+github_username:  britown88
 
 # Build settings
 markdown: kramdown
